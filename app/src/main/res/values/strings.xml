@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Suraj Tip Calculator</string>
+    <string name = "bill">Bill</string>
+    <string name = "tip_percentage">Tip Percentage</string>
+    <string name = "tax_percentage">Tax Percentage</string>
+    <string name = "button">Calculate Total Bill</string>
+    <string name = "tipAmount">Tip Amount</string>
+    <string name = "taxAmount">Tax Amount</string>
+    <string name = "billAmount">Bill Amount</string>
+</resources>
