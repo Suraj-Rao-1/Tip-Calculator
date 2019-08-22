@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:text="Changedddddd"
+        android:text="Bill_School_Computer"
         android:textColor="#FF0000"
         android:textSize="18sp" />
 

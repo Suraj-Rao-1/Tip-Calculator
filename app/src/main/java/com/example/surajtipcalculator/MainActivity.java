@@ -13,9 +13,9 @@ import android.widget.TextView;
 import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
-    EditText editTextBBill;
-    EditText editTextPTip;
-    EditText editTextBTax;
+    EditText editTextBBill =  findViewById(R.id.bbill);
+    EditText editTextPTip = findViewById(R.id.ptip);
+    EditText editTextBTax = findViewById(R.id.btax);
     Button button;
 
     @Override
@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        editTextBBill = findViewById(R.id.bbill);
-        editTextPTip = findViewById(R.id.ptip);
-        editTextBTax = findViewById(R.id.btax);
+        //editTextBBill = findViewById(R.id.bbill);
+        //editTextPTip = findViewById(R.id.ptip);
+        //editTextBTax = findViewById(R.id.btax);
         button = findViewById(R.id.button);
 
         editTextBBill.addTextChangedListener(loginTextWatcher);
@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             String bill = editTextBBill.getText().toString().trim();
             String tip = editTextPTip.getText().toString().trim();
             String tax = editTextBTax.getText().toString().trim();
+            //button.setEnabled(!bill.isEmpty() && !tip.isEmpty() && !tax.isEmpty() && !bill.determinePoint() && !tip.determinePoint() && tax.determinePoint());
             button.setEnabled(!bill.isEmpty() && !tip.isEmpty() && !tax.isEmpty());
         }
 
@@ -83,6 +84,17 @@ public class MainActivity extends AppCompatActivity {
         num3TextView.setText("Tax: $" + df.format(tax));
 
     }
+
+    public boolean determinePoint(){
+        String billD = editTextBBill.getText().toString();
+        String tipD = editTextPTip.getText().toString();
+        String taxD = editTextBTax.getText().toString();
+
+        if(billD.equals(".") || tipD.equals(".") || taxD.equals("."))
+            return true;
+
+        return false;
+    };
 }
 
 
