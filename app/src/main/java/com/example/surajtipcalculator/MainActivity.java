@@ -35,9 +35,19 @@ public class MainActivity extends AppCompatActivity {
 
     TextWatcher loginTextWatcher = new TextWatcher(){
 
+        /*
+        Next three methods beforeTextChanged(), onTextChanged(), and afterTextChanged() are
+        to determine when the button should be enabled
+        */
+
         @Override
         public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+            String bill = editTextBBill.getText().toString().trim();
+            String tip = editTextPTip.getText().toString().trim();
+            String tax = editTextBTax.getText().toString().trim();
 
+            if(!bill.equals(".") && !tip.equals(".") && !tax.equals("."))
+                button.setEnabled(!bill.isEmpty() && !tip.isEmpty() && !tax.isEmpty());
         }
 
         @Override
@@ -45,12 +55,19 @@ public class MainActivity extends AppCompatActivity {
             String bill = editTextBBill.getText().toString().trim();
             String tip = editTextPTip.getText().toString().trim();
             String tax = editTextBTax.getText().toString().trim();
-            button.setEnabled(!bill.isEmpty() && !tip.isEmpty() && !tax.isEmpty());
+
+            if(!bill.equals(".") && !tip.equals(".") && !tax.equals("."))
+                button.setEnabled(!bill.isEmpty() && !tip.isEmpty() && !tax.isEmpty());
         }
 
         @Override
         public void afterTextChanged(Editable editable) {
+            String bill = editTextBBill.getText().toString().trim();
+            String tip = editTextPTip.getText().toString().trim();
+            String tax = editTextBTax.getText().toString().trim();
 
+            if(!bill.equals(".") && !tip.equals(".") && !tax.equals("."))
+                button.setEnabled(!bill.isEmpty() && !tip.isEmpty() && !tax.isEmpty());
         }
     };
 
@@ -83,6 +100,21 @@ public class MainActivity extends AppCompatActivity {
         num3TextView.setText("Tax: $" + df.format(tax));
 
     }
+
+    // Wish this method could be used to determine if the code has a decimal point
+
+    /*public boolean hasDecimal(View v){
+        editTextBBill = findViewById(R.id.bbill);
+        editTextPTip = findViewById(R.id.ptip);
+        editTextBTax = findViewById(R.id.btax);
+
+        String bill = editTextBBill.getText().toString();
+
+        if(bill.equals("."))
+            return true;
+        return false;
+
+    }*/
 }
 
 

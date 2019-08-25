@@ -8,6 +8,7 @@
     android:paddingLeft="5dp"
     android:paddingRight="5dp"
     android:orientation="vertical"
+    android:background = "@color/lightBlue"
     tools:context=".MainActivity">
 
     <TextView
@@ -16,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:text="@string/bill"
-        android:textColor="#FF0000"
+        android:textColor="@color/red"
         android:textSize="18sp" />
 
     <EditText
@@ -33,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:text="@string/tip_percentage"
-        android:textColor="#FF0000"
+        android:textColor="@color/red"
         android:textSize="18sp" />
 
     <EditText
@@ -42,7 +43,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        />
 
     <TextView
         android:id="@+id/nothing"
@@ -50,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:text="@string/tax_percentage"
-        android:textColor="#FF0000"
+        android:textColor="@color/red"
         android:textSize="18sp" />
 
     <EditText
@@ -68,7 +70,8 @@
         android:layout_weight="0"
         android:enabled="false"
         android:onClick="calculateBill"
-        android:text="@string/button" />
+        android:text="@string/button"
+         />
 
     <TextView
         android:id="@+id/textView6"
