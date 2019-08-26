@@ -13,88 +13,116 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_weight="0"
         android:text="@string/bill"
-        android:textColor="@color/red"
-        android:textSize="18sp" />
+        android:textColor="@color/darkBlue"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/bbill"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:ems="10"
-        android:inputType="numberDecimal" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0"
-        android:text="@string/tip_percentage"
-        android:textColor="@color/red"
-        android:textSize="18sp" />
-
-    <EditText
-        android:id="@+id/ptip"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_weight="0"
         android:ems="10"
         android:inputType="numberDecimal"
-        />
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:text="@string/tip_percentage"
+        android:textColor="@color/darkBlue"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/ptip"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/nothing"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_weight="0"
         android:text="@string/tax_percentage"
-        android:textColor="@color/red"
-        android:textSize="18sp" />
+        android:textColor="@color/darkBlue"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/btax"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_weight="0"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_weight="0"
-        android:enabled="false"
         android:onClick="calculateBill"
         android:text="@string/button"
-         />
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:text=""
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_weight="0"
         android:text="@string/tipAmount"
+        android:textColor="@color/darkBlue"
         android:textSize="24sp" />
 
     <TextView
         android:id="@+id/tax"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_weight="0"
         android:text="@string/taxAmount"
+        android:textColor="@color/darkBlue"
         android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_weight="0"
         android:text="@string/billAmount"
+        android:textColor="@color/darkBlue"
         android:textSize="24sp" />
 
 </LinearLayout>

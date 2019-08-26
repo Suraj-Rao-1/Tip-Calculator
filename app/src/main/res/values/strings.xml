@@ -4,7 +4,7 @@
     <string name = "tip_percentage">Tip Percentage</string>
     <string name = "tax_percentage">Tax Percentage</string>
     <string name = "button">Calculate Total Bill</string>
-    <string name = "tipAmount">Tip Amount</string>
-    <string name = "taxAmount">Tax Amount</string>
-    <string name = "billAmount">Bill Amount</string>
+    <string name = "tipAmount">Tip</string>
+    <string name = "taxAmount">Tax</string>
+    <string name = "billAmount">Final Bill</string>
 </resources>
